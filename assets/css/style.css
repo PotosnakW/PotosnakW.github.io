@@ -1,4 +1,4 @@
-/**
+f/**
 * Template Name: iPortfolio - v3.7.0
 * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
 * Author: BootstrapMade.com
@@ -381,13 +381,13 @@ section {
   opacity: 0;
 }
 .portfolio .portfolio-wrap .portfolio-links {
-  opacity: 1;
+  opacity: 0;
   left: 0;
   right: 0;
-  bottom: -60px;
+  bottom: 0px;
   z-index: 3;
   position: absolute;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out  0.3s;
   display: flex;
   justify-content: center;
   padding-bottom: 15px;
