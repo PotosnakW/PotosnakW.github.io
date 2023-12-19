@@ -16,7 +16,7 @@ header text black: #272829
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Arial", sans-serif;
   color: #042838;
 }
 
@@ -31,7 +31,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
-  color: #4390BA;
+  color: #fff;
 }
 
 /* Mobile Navigation */

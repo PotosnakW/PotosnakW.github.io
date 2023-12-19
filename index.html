@@ -59,7 +59,7 @@
         <ul>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="resume-details.html" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>CV</span></a></li>
-          <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Projects</span></a></li>
+          <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Research</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Publications</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
@@ -76,16 +76,19 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-3">
+            <div class="col-lg-8 pt-3 pt-lg-0 content">
+            <p>Willa Potosnak is a 2nd year Ph.D. student at the Carnegie Mellon University (CMU) Robotics Institute (RI).</p>
+                
+            <p>She is currently researching methods to improve modeling of complex dynamical system with Deep Learning. In particular, she is interested in the intersection of mechanistic modeling and Deep Learning that incorporates fundamental principles, such as differential equations, from domains in models. This approach can not only enhance model performance but can also facilitate learning underlying mechanics of the system, enabling tailored interventions to mitigate adverse outcomes.</p>
+              
+            <p>She has worked on several projects to improve outcome prediction using forecasting and survival analysis frameworks while contributing open-source code.</p>
+        </div>
+        <div class="col-lg-4">
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <p>
-              Willa Potosnak is a 1st year Ph.D. student at the Carnegie Mellon University (CMU) Robotics Institute (RI). She is currently researching Machine Learning (ML) and statistical methods to improve Forecasting algorithms. Among her research goals are to improve ML methods used to aid intervention and best practice decision making. She is particularly interested in the intersection of Forecasting, State-Space Modeling of Dynamical Systems, and Causal Inference to address clinical challenges within healthcare.
-            </p>
-          </div>
+        </div>
       </div>
-    </section><!-- End About Section -->
+    </section> 
+    <!-- End About Section -->
 
 
     <!-- ======= Projects Section ======= -->
@@ -93,9 +96,27 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Projects</h2>
-          <p>Projects include both research as well as volunteer work.</p>
+          <h2>Research</h2>
         </div>
+          
+ 	<div class="people-wrap">
+  	  <div class="people portfolio-wrap">
+    	    <img src="assets/img/projects/project_mechanistic.png">
+	      <div class="portfolio-links">
+                <a href="assets/img/projects/project_mechanistic.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Supplementing deep learning models with principles from pharmacology have demonstrated successful application in improving prediction tasks."><i class="bx bx-plus"></i></a>
+                <a href="#projects" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+          <div class="content d-flex align-items-stretch">
+            <div class="info">
+              <div>
+                <h4>Physics-Informed Deep Learning \ Mechanistic Modeling</h4>
+                <p>Efforts to supplement deep learning models with first principles from domain area have demonstrated successful application in many domains such as pharmacology, biology, physics, and fluid dynamics, among others. The combination of domain-specific first principles with deep learning results in models that are not only data-driven but also consistent with the underlying physical, biological, or chemical processes. Furthermore, incorporating prior knowledge, For example, first principles may be in the form of systems of differential equations that aim to capture underlying mechanisms of data generation. In this case, deep learning paradigms learn parameters of the system while in turn being constrained by the system design to reflect only realistic modeling solutions. 
+.</p>
+              </div>
+            </div>
+          </div>
+	</div>
        
  	<div class="people-wrap">
   	  <div class="people portfolio-wrap">
@@ -113,64 +134,7 @@
               </div>
             </div>
           </div>
-	</div>
-        
-	<div class="people-wrap">
-  	  <div class="people portfolio-wrap">
-    	    <img src="assets/img/projects/project_cabg.png">
-	      <div class="portfolio-links">
-                <a href="assets/img/projects/project_cabg.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Post-operative outcomes for which we aim to develop risk models include: mortality, renal failure, reoperation, prolonged ventilation, and combined morbidity and mortality. Improved risk predictions would better enable clinicans to identify at-risk patients who require closer monitoring post-operation."><i class="bx bx-plus"></i></a>
-                <a href="#projects" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-          </div>
-          <div class="content d-flex align-items-stretch">
-            <div class="info">
-              <div>
-                <h4>Cardiovascular Surgery Risk Prediction</h4>
-                <p>Preoperative risk prediction algorithms, such as the STS Risk Calculator, are frequently used in practice by clinicans to aid intraoperative and post-operative decision-making. The objective of this research effort is to improve individual patient risk predictions for multiple outcomes, such as mortality and renal failure, following cardiac-surgeries, including coronary artery bypass grafting (CABG). The broader inclusion of time-series intraoperative data in risk models to improve post-operative predictions has been one focus of the research effort.</p>
-              </div>
-            </div>
-          </div>
-	</div>      
-          
- 	<div class="people-wrap">
-  	  <div class="people portfolio-wrap">
-    	    <img src="assets/img/projects/project_fl.png">
-	      <div class="portfolio-links">
-                <a href="assets/img/projects/project_fl.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Federated learning can be performed with a global model as shown in the image or directly between local sites in a peer-to-peer approach."><i class="bx bx-plus"></i></a>
-                <a href="#projects" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-          </div>
-          <div class="content d-flex align-items-stretch">
-            <div class="info">
-              <div>
-                <h4>Federated Learning</h4>
-                <p>Developing robust machine learning algorithms can require large amounts of data. Generally data may be collected from different institutions and shared between multiple servers or devices for this purpose. However, data sharing can be restricted due to data privacy and security constraints. Federated learning is one Machine Learning technique that addresses data sharing constraints by training algorithms across decentralized data servers. Current research includes leveraging Knowledge Distillation algorithms to personalize ML models for institutional organizations with data privacy and communication bandwidth constraints.</p>
-              </div>
-            </div>
-          </div>
-	</div>
-
- 	<div class="people-wrap">
-  	  <div class="people portfolio-wrap">
-    	    <img src="assets/img/projects/roboticsed.png">
-	      <div class="portfolio-links">
-                <a href="assets/img/projects/roboticsed.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="The resources page of RoboticsEd was designed with educator-oriented filtering options and explicit resource badges to highlight Robotics Institute and Robot Doctor materials."><i class="bx bx-plus"></i></a>
-                <a href="https://roboticsed.ri.cmu.edu" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-          </div>
-          <div class="content d-flex align-items-stretch">
-            <div class="info">
-              <div>
-                <h4>RoboticsEd</h4>
-                <p>RoboticsEd is a website of STEM resources developed with the goal of making robotics education more accessible to educators and their students. I am currently a volunteer co-lead of website design and content for a team of students and educators from the robotics community working on this initiative. This initiative is also co-lead by Dr. Maxim Likhachev, Dr. Oliver Kroemer and Rachel Burcin of the CMU Robotics Institute.</p>
-		<p>
-		  <a href="https://roboticsed.ri.cmu.edu" target="_blank">[RoboticsEd.ri.cmu.edu]</a>
-		</p>
-              </div>
-            </div>
-          </div>
-	</div>
+	</div>   
 
 
     </section><!-- End Projects Section -->
@@ -184,6 +148,32 @@
             <p>A complete list of publications can be found
             <a href="resume-details.html" title="More Details"><i </i>here.</a>
             </p>
+        </div>
+          
+          
+        <div class="people-wrap">
+          <div class="people portfolio-wrap">
+                <img src="assets/img/portfolio/2023_ml4h.png">
+              <div class="portfolio-links">
+                    <a href="assets/img/portfolio/2023_ml4h.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=" Identifying groups of samples with similar survival rates can be used to
+gain insight into interventions that can help improve longevity for such groups. In auton-survival, we refer to this group identification and survival assessment as phenotyping. The figure shows Kaplan-Meier curves for patient subgroups extracted using the auton-survival supervised phenotyping tool."><i class="bx bx-plus"></i></a>
+                    <a href="https://arxiv.org/abs/2309.13135" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+              </div>
+              <div class="content d-flex align-items-stretch">
+                <div class="info">
+                  <div>
+                    <h4>Forecasting Response to Treatment with Global Deep Learning and Patient-Specific Pharmacokinetic Priors</h4>
+            <h1>W. Potosnak, C. Challu, K. G. Oliveras, A. Dubrawski</h1>
+            <p>We propose a novel hybrid global-local architecture and a pharmacokinetic encoder that informs deep learning models of patient-specific treatment effects. In the Machine Learning for Health (ML4H) Findings Track Collection.
+            </p>
+            <p>
+                <a href="https://arxiv.org/abs/2309.13135" target="_blank">[Paper]&emsp;</a>
+                <a href="https://github.com/Nixtla/neuralforecast/tree/treat_module" target="_blank">[Code]&emsp;</a>
+            </p>
+                  </div>
+                </div>
+              </div>
         </div>
           
         <div class="people-wrap">
@@ -214,52 +204,6 @@ gain insight into interventions that can help improve longevity for such groups.
 
         <div class="people-wrap">
           <div class="people portfolio-wrap">
-                <img src="assets/img/portfolio/2022_sts_abstract_results.svg">
-              <div class="portfolio-links">
-                    <a href="assets/img/portfolio/2022_sts_abstract_results.svg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Model performance was measured using area under the receiver operating characteristic curve (AUC-ROC). The inclusion of intraoperative data improves risk predictions, on average, for all outcomes, particularly combined morbidity and mortality, and prolonged ventilation."><i class="bx bx-plus"></i></a>
-                    <a href="https://www.sts.org/sites/default/files/documents/2022%20STS%20Coronary%20Conference_Accepted%20Abstracts.pdf" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-              </div>
-              <div class="content d-flex align-items-stretch">
-                <div class="info">
-                  <div>
-                    <h4>Machine Learning Models with Intraoperative Features Improve Risk Predictions Following CABG</h4>
-            <h1>W. Potosnak, K. A. Dufendach, A. Kaczorowski, J. K. Miller, A. Dubrawski</h1>
-                    <p>Current models that predict patient risk of adverse outcomes following coronary artery bypass grafting (CABG) rely mainly on preoperative data. Machine Learning was used to determine whether inclusion of intraoperative data improves risk predictions for multiple outcomes following CABG. Presented at the 2022 Society of Thoracic Surgeons Coronary Conference.</p>
-            <p>
-                <a href="https://www.sts.org/sites/default/files/documents/2022%20STS%20Coronary%20Conference_Accepted%20Abstracts.pdf" target="_blank">[Abstract]&emsp;</a>
-            </p>
-                  </div>
-                </div>
-              </div>
-        </div>
-
-        <div class="people-wrap">
-          <div class="people portfolio-wrap">
-                <img src="assets/img/portfolio/2022_aaai.png">
-              <div class="portfolio-links">
-                    <a href="assets/img/portfolio/2022_aaai.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Rule pruning is performed using permutation testing with the novel contribution of using the k-nearest neighbors (KNN) machine learning algorithm as a non-parametric approach to estimate the probability that rules are generated from the dataset without permutated class labels."><i class="bx bx-plus"></i></a>
-                    <a href="https://www.youtube.com/watch?v=lz4nqmnsErs&list=PLIsth1r16Z2NYx6tkRzGgW9wP5vQDrPcY&index=5" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-              </div>
-              <div class="content d-flex align-items-stretch">
-                <div class="info">
-                  <div>
-                    <h4>Robust 
-    Rule Learning for Reliable and Interpretable Insight into Expertise Transfer Opportunities</h4>
-                <h1>W. Potosnak, S. Caldas, K. A. Dufendach, J. K. Miller, A. Dubrawski</h1>
-            <p>We propose the use of non-parametric Machine Learning algorithms to improve the reliability of algorithmic rule learning. Rule learning was applied to identify beneficial model transfer opportunities between healthcare sites. In Proceedings of the Thirty-Sixth AAAI Conference on Artificial Intelligence.</p>
-            <p>
-                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21704" target="_blank">[Paper]&emsp;</a>
-                <a href="https://www.youtube.com/watch?v=lz4nqmnsErs&list=PLIsth1r16Z2NYx6tkRzGgW9wP5vQDrPcY&index=5" target="_blank">[3-minute Video]</a>
-            </p>
-                  </div>
-                </div>
-              </div>
-        </div>
-
-        <div class="people-wrap">
-          <div class="people portfolio-wrap">
                 <img src="assets/img/portfolio/enso.png">
               <div class="portfolio-links">
                     <a href="assets/img/portfolio/enso.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="We propose Graph Neural Networks (GNNs) to forecast ENSO using sea surface temperature (SST) anomaly data. GNNs may better exploit large-scale, spatiotemporal patterns indicative of ENSO than CNNs, which are based on local convolutions."><i class="bx bx-plus"></i></a>
@@ -269,7 +213,7 @@ gain insight into interventions that can help improve longevity for such groups.
               <div class="content d-flex align-items-stretch">
                 <div class="info">
                   <div>
-                    <h4>Graph Neural Networks for Improved El Nino Forecasting.</h4>
+                    <h4>Graph Neural Networks for Improved El Nino Forecasting</h4>
             <h1>S. Rühling Cachay, E. Erickson*, A. F. C., Bucker*, E. Pokropek*, W. Potosnak*, S. Osei, B. Lütjens.</h1>
                     <p>We propose the application of spatiotemporal Graph Neural Networks (GNN) to forecast El Niño–Southern Oscillation (ENSO) at longer lead times with finer granularity and improved predictive skill than current state-of-the-art methods. Presented at the 2020 NeurIPS workshop, Tackling Climate Change with Machine Learning.</p>
             <p>
