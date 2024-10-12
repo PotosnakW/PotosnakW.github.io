@@ -76,16 +76,19 @@
       <div class="container">
 
         <div class="row">
-            <div class="col-lg-8 pt-3 pt-lg-0 content">
-            <p>Willa Potosnak is a 2nd year doctoral student at the Carnegie Mellon University (CMU) Robotics Institute (RI).</p>
+<!--             <div class="col-lg-8 pt-3 pt-lg-0 content"> -->
+            <div class="col-lg-12 pt-3 pt-lg-0 content">
+            <p>I am a doctoral student in the School of Computer Science at Carnegie Mellon University (CMU).</p>
                 
-            <p>She is currently researching methods to improve modeling of complex dynamical systems with Deep Learning. In particular, she is interested in the intersection of mechanistic modeling and Deep Learning that incorporates first principles from domains in models. This approach can not only enhance model performance but can also facilitate learning underlying mechanics of the system, enabling tailored interventions to mitigate adverse outcomes.</p>
+            <p>I am interested in reasoning in neural networks and developing techniques that guide model reasoning for conceptual synthesis—directing how models process and combine concepts in predictions without prior exposure to specific data. My current work aims to understand and enhance the learning of temporal dynamics, bridge data gaps, and mitigate data memorization to improve the accuracy and interpretability of forecasting in zero-shot tasks, particularly for real-world out-of-distribution scenarios.</p>
+                
+            <p>I am also interested in methods to improve modeling of complex dynamical systems with Deep Learning, such as the intersection of mechanistic modeling and Deep Learning that incorporates first principles from domains in models. This approach can not only enhance model performance but can also facilitate learning underlying mechanics of the system.</p>
               
-            <p>She has worked on several projects to improve outcome prediction using forecasting and survival analysis frameworks while contributing open-source code.</p>
+            <p>I have worked on several projects to improve outcome prediction using forecasting and survival analysis frameworks while contributing open-source code. I have also collaborated with industry partners in healthcare and renewable wind energy to enhance models for critical event prediction.</p>
         </div>
-        <div class="col-lg-4">
+<!--         <div class="col-lg-2">
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-        </div>
+        </div>  -->
       </div>
     </section> 
     <!-- End About Section -->
@@ -98,6 +101,24 @@
         <div class="section-title">
           <h2>Research</h2>
         </div>
+          
+	<div class="people-wrap">
+  	  <div class="people portfolio-wrap">
+    	    <img src="assets/img/projects/project_forecasting.png">
+	      <div class="portfolio-links">
+                <a href="assets/img/projects/project_forecasting.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Time series healthcare data, such as blood glucose values, can be challenging to forecast since there are many exogenous factors that contribute to changes in signal trajectories or patterns. Accurate forecasts of vital signs can improve people's quality of life. For example, accurate forecasts of blood glucose values would enable people with diabetes to better prempt hyper- and hypoglycemic events."><i class="bx bx-plus"></i></a>
+                <a href="#projects" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+          <div class="content d-flex align-items-stretch">
+            <div class="info">
+              <div>
+                <h4>Forecasting</h4>
+                <p>Time series healthcare data can be challenging to forecast since there are many exogenous factors that contribute to changes in signal trajectories or patterns. Incorporating exogenous information in models can improve forecasts and reduce variance in model predictions. Exogenous information, such as medications, are often represented as sparse variables in data, yet may have latent time-dependent effects not encapsulated in numeric data. I am currently researching Machine Learning approaches to develop and parametrize mathematical models that encapsulate relevant time-dependent information for use in improving forecasts for data with sparse features. </p>
+              </div>
+            </div>
+          </div>
+	</div>   
           
  	<div class="people-wrap">
   	  <div class="people portfolio-wrap">
@@ -117,25 +138,6 @@
             </div>
           </div>
 	</div>
-       
- 	<div class="people-wrap">
-  	  <div class="people portfolio-wrap">
-    	    <img src="assets/img/projects/project_forecasting.png">
-	      <div class="portfolio-links">
-                <a href="assets/img/projects/project_forecasting.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Time series healthcare data, such as blood glucose values, can be challenging to forecast since there are many exogenous factors that contribute to changes in signal trajectories or patterns. Accurate forecasts of vital signs can improve people's quality of life. For example, accurate forecasts of blood glucose values would enable people with diabetes to better prempt hyper- and hypoglycemic events."><i class="bx bx-plus"></i></a>
-                <a href="#projects" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-          </div>
-          <div class="content d-flex align-items-stretch">
-            <div class="info">
-              <div>
-                <h4>Forecasting</h4>
-                <p>Time series healthcare data can be challenging to forecast since there are many exogenous factors that contribute to changes in signal trajectories or patterns. Incorporating exogenous information in models can improve forecasts and reduce variance in model predictions. Exogenous information, such as medications, are often represented as sparse variables in data, yet may have latent time-dependent effects not encapsulated in numeric data. I am currently researching Machine Learning approaches to develop and parametrize mathematical models that encapsulate relevant time-dependent information for use in improving forecasts for data with sparse features. </p>
-              </div>
-            </div>
-          </div>
-	</div>   
-
 
     </section><!-- End Projects Section -->
 
@@ -152,10 +154,33 @@
           
         <div class="people-wrap">
           <div class="people portfolio-wrap">
+                <img src="assets/img/portfolio/2024_neuripsTSALM.png">
+              <div class="portfolio-links">
+                    <a href="assets/img/portfolio/2024_neuripsTSALM.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Implicit reasoning tasks for time series include composition (a), comparison (b), and inverse search (c). In composition, models predict new composite series seen only at inference. In comparison, they forecast series from unseen function values. In inverse search, models predict decomposed component series. The black dashed line in the figure indicates in-distribution time series observed during training (left) and out-of-distribution data observed during inference (right)."><i class="bx bx-plus"></i></a>
+                    <a href="https://arxiv.org/abs/2409.10840" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+              </div>
+              <div class="content d-flex align-items-stretch">
+                <div class="info">
+                  <div>
+                    <h4>Implicit Reasoning in Deep Time Series Forecasting</h4>
+            <h1>W. Potosnak, C. Challu, M. Goswami, M. Wiliński, N. Żukowska, A. Dubrawski</h1>
+            <p> This work takes an initial step toward assessing the reasoning abilities of deep time series forecasting models. We find that certain linear, MLP-based, and patch-based Transformer models generalize effectively in systematically orchestrated out-of-distribution scenarios, suggesting underexplored reasoning capabilities beyond simple pattern memorization. To be presented at NeurIPS 2024 Workshop on Time Series in the Age of Large Models (TSALM).
+            </p>
+            <p>
+                <a href="https://arxiv.org/abs/2409.10840" target="_blank">[Paper]&emsp;</a>
+            </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+          
+        <div class="people-wrap">
+          <div class="people portfolio-wrap">
                 <img src="assets/img/portfolio/2024_iclr.png">
               <div class="portfolio-links">
                     <a href="assets/img/portfolio/2024_iclr.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="In comparing the baseline physics model (bottom) with our proposed ML physics hybrid model (top) for a turbine example, the ML physics hybrid model provides a more accurate event prediction and a longer lead time from model inference to predicted event."><i class="bx bx-plus"></i></a>
-                    <a href="https://arxiv.org/abs/2309.13135" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                    <a href="https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/iclr2024/75/paper.pdf" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
               </div>
               <div class="content d-flex align-items-stretch">
@@ -289,7 +314,7 @@ gain insight into interventions that can help improve longevity for such groups.
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                  <p><a href = "mailto: wpotosna@andrew.cmu.edu">wpotosna@andrew.cmu.edu</a></p>
+                  <p><a href = "mailto: wpotosna@andrew.cmu.edu">wpotosna [at] andrew [dot] cmu [dot] edu</a></p>
               </div>
             </div>
           </div>
