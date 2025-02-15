@@ -171,21 +171,22 @@
           
         <div class="people-wrap">
           <div class="people portfolio-wrap">
-                <img src="assets/img/portfolio/2024_neuripsTSALM.png">
+                <img src="assets/img/portfolio/2025_reasoning.png">
               <div class="portfolio-links">
-                    <a href="assets/img/portfolio/2024_neuripsTSALM.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Implicit reasoning tasks for time series include composition (a), comparison (b), and inverse search (c). In composition, models predict new composite series seen only at inference. In comparison, they forecast series from unseen function values. In inverse search, models predict decomposed component series. The black dashed line in the figure indicates in-distribution time series observed during training (left) and out-of-distribution data observed during inference (right)."><i class="bx bx-plus"></i></a>
-                    <a href="https://arxiv.org/abs/2409.10840" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                    <a href="assets/img/portfolio/2025_reasoning.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="(a) Traditional forecasting paradigm: models are trained directly on the training set of forecast target signals, with forecasts for the temporally subsequent test set generated using the preceding context window. (b) Compositional reasoning forecasting paradigm: models are trained on basis function series that compose the ground truth signal, with forecasts for the temporally subsequent test set generated using the preceding context window.."><i class="bx bx-plus"></i></a>
+                    <a href="https://arxiv.org/abs/2502.06037" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
               </div>
               <div class="content d-flex align-items-stretch">
                 <div class="info">
                   <div>
-                    <h4>Implicit Reasoning in Deep Time Series Forecasting</h4>
-            <h1>W. Potosnak, C. Challu, M. Goswami, M. Wiliński, N. Żukowska, A. Dubrawski</h1>
-            <p>This work takes an initial step toward assessing the reasoning abilities of deep time series forecasting models. We find that certain linear, MLP-based, and patch-based Transformer models generalize effectively in systematically orchestrated out-of-distribution scenarios, suggesting underexplored reasoning capabilities beyond simple pattern memorization. To be presented at the NeurIPS 2024 Workshop on Time Series in the Age of Large Models.
+                    <h4>Investigating Compositional Reasoning in Time Series Foundation Models</h4>
+            <h1>W. Potosnak, C. Challu*, M. Goswami*, K. G. Olivares, M. Wiliński, N. Żukowska, A. Dubrawski</h1>
+            <p>This work investigates whether Time Series Foundation Models (TSFMs) rely on memorization or possess compositional reasoning capabilities. Inspired by language modeling research, the study formally defines compositional reasoning in forecasting and evaluates 23 deep learning models on synthetic and real-world datasets. Through controlled experiments, the findings reveal how architectural design choices influence TSFMs' reasoning and generalization abilities.
             </p>
             <p>
-                <a href="https://arxiv.org/abs/2409.10840" target="_blank">[Paper]&emsp;</a>
+                <a href="https://arxiv.org/abs/2502.06037" target="_blank">[Paper]&emsp;</a>
+                <a href="https://github.com/PotosnakW/neuralforecast/tree/tsfm_reasoning" target="_blank">[Code]&emsp;</a>
             </p>
                   </div>
                 </div>
@@ -197,7 +198,7 @@
                 <img src="assets/img/portfolio/2024_neuripsTSALM_steering.jpg">
               <div class="portfolio-links">
                     <a href="assets/img/portfolio/2024_neuripsTSALM_steering.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Overview of linear probing, concept localization, and steering."><i class="bx bx-plus"></i></a>
-                    <a href="https://arxiv.org/abs/2409.12915" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                    <a href="https://arxiv.org/abs/2502.06037" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
               </div>
               <div class="content d-flex align-items-stretch">
@@ -205,11 +206,58 @@
                   <div>
                     <h4>Exploring Representations and Interventions in Time Series Foundation Models</h4>
             <h1>M. Wiliński, M. Goswami, W. Potosnak*, N. Żukowska*, A. Dubrawski</h1>
-            <p>Time series foundation models promise to be powerful tools for a wide range of applications. However, their internal representations and learned concepts are still not well understood. We explore the concepts learned by these models - such as periodicity and trends - and how these can be manipulated through latent space steering to influence model behavior. To be presented at the NeurIPS 2024 Workshop on Time Series in the Age of Large Models.
+            <p>Time series foundation models promise to be powerful tools for a wide range of applications. However, their internal representations and learned concepts are still not well understood. We explore the concepts learned by these models - such as periodicity and trends - and how these can be manipulated through latent space steering to influence model behavior. Presented at the NeurIPS 2024 Workshop on Time Series in the Age of Large Models.
             </p>
             <p>
-                <a href="https://arxiv.org/abs/2409.12915" target="_blank">[Paper]&emsp;</a>
+                <a href="https://arxiv.org/abs/2502.06037" target="_blank">[Paper]&emsp;</a>
                 <a href="https://anonymous.4open.science/r/tsfm-interventions-3452/README.md" target="_blank">[Code]&emsp;</a>
+            </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+          
+        <div class="people-wrap">
+          <div class="people portfolio-wrap">
+                <img src="assets/img/portfolio/2024_neuripsTSALM.png">
+              <div class="portfolio-links">
+                    <a href="assets/img/portfolio/2024_neuripsTSALM.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Implicit reasoning tasks for time series include composition (a), comparison (b), and inverse search (c). In composition, models predict new composite series seen only at inference. In comparison, they forecast series from unseen function values. In inverse search, models predict decomposed component series. The black dashed line in the figure indicates in-distribution time series observed during training (left) and out-of-distribution data observed during inference (right)."><i class="bx bx-plus"></i></a>
+                    <a href="https://arxiv.org/abs/2409.10840" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+              </div>
+              <div class="content d-flex align-items-stretch">
+                <div class="info">
+                  <div>
+                    <h4>Implicit Reasoning in Deep Time Series Forecasting</h4>
+            <h1>W. Potosnak, C. Challu, M. Goswami, M. Wiliński, N. Żukowska, A. Dubrawski</h1>
+            <p>This work takes an initial step toward assessing the reasoning abilities of deep time series forecasting models. We find that certain linear, MLP-based, and patch-based Transformer models generalize effectively in systematically orchestrated out-of-distribution scenarios, suggesting underexplored reasoning capabilities beyond simple pattern memorization. Presented at the NeurIPS 2024 Workshop on Time Series in the Age of Large Models.
+            </p>
+            <p>
+                <a href="https://arxiv.org/abs/2409.10840" target="_blank">[Paper]&emsp;</a>
+            </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+          
+        <div class="people-wrap">
+          <div class="people portfolio-wrap">
+                <img src="assets/img/portfolio/2023_ml4h.png">
+              <div class="portfolio-links">
+                    <a href="assets/img/portfolio/2023_ml4h.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=" Instantaneous medication administrations are represented as sparse variables in time series data. We propose a pharmacokinetic encoder to effectively capture time-dependent plasma drug concentration."><i class="bx bx-plus"></i></a>
+                    <a href="https://arxiv.org/abs/2309.13135" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+              </div>
+              <div class="content d-flex align-items-stretch">
+                <div class="info">
+                  <div>
+                    <h4>Global Deep Forecasting with Patient-Specific Pharmacokinetics</h4>
+            <h1>W. Potosnak, C. Challu, K. G. Olivares, K. A. Dufendach, A. Dubrawski</h1>
+            <p>We propose a novel hybrid global-local architecture and a PK encoder that informs deep learning models of patient-specific treatment effects. Our PK encoder surpasses baselines by up to 16.4% on simulated data and 4.9% on real-world data for individual patients during critical events of severely high and low glucose levels. Additionally, our proposed hybrid global-local architecture outperforms patient-specific PK models by 15.8%, on average.
+            </p>
+            <p>
+                <a href="https://arxiv.org/abs/2309.13135" target="_blank">[Paper]&emsp;</a>
+                <a href="https://github.com/PotosnakW/neuralforecast/tree/pk_paper_code" target="_blank">[Code]&emsp;</a>
             </p>
                   </div>
                 </div>
@@ -228,7 +276,7 @@
                 <div class="info">
                   <div>
                     <h4>Severe Wind Event Prediction with Multivariate Physics-Informed Deep Learning</h4>
-            <h1>W. Potosnak, C. Challu, K. G. Oliveras, J. K. Miller, A. Dubrawski</h1>
+            <h1>W. Potosnak, C. Challu, K. G. Olivares, J. K. Miller, A. Dubrawski</h1>
             <p>Wind turbines combat climate change by generating clean energy, but their long-term effectiveness depends on minimizing maintenance costs due to damage from severe weather events, such as wind gusts. To address this, we propose a physics-informed deep learning model to better predict severe wind events and a multivariate time series extension. Presented at the Twelfth International Conference on Learning Representations (ICLR).
             </p>
             <p>
@@ -264,31 +312,6 @@
               </div>
         </div>
           
-          
-        <div class="people-wrap">
-          <div class="people portfolio-wrap">
-                <img src="assets/img/portfolio/2023_ml4h.png">
-              <div class="portfolio-links">
-                    <a href="assets/img/portfolio/2023_ml4h.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=" Instantaneous medication administrations are represented as sparse variables in time series data. We propose a pharmacokinetic encoder to effectively capture time-dependent plasma drug concentration."><i class="bx bx-plus"></i></a>
-                    <a href="https://arxiv.org/abs/2309.13135" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-              </div>
-              <div class="content d-flex align-items-stretch">
-                <div class="info">
-                  <div>
-                    <h4>Forecasting Response to Treatment with Global Deep Learning and Patient-Specific Pharmacokinetic Priors</h4>
-            <h1>W. Potosnak, C. Challu, K. G. Oliveras, A. Dubrawski</h1>
-            <p>We propose a novel hybrid global-local architecture and a pharmacokinetic encoder that informs deep learning models of patient-specific treatment effects. In the Machine Learning for Health (ML4H) Findings Track Collection.
-            </p>
-            <p>
-                <a href="https://arxiv.org/abs/2309.13135" target="_blank">[Paper]&emsp;</a>
-                <a href="https://github.com/Nixtla/neuralforecast/tree/treat_module" target="_blank">[Code]&emsp;</a>
-            </p>
-                  </div>
-                </div>
-              </div>
-        </div>
-          
         <div class="people-wrap">
           <div class="people portfolio-wrap">
                 <img src="assets/img/portfolio/2022_mlhc.png">
@@ -302,7 +325,7 @@ gain insight into interventions that can help improve longevity for such groups.
                 <div class="info">
                   <div>
                     <h4>auton-survival: an Open-Source Package for Regression, Counterfactual Estimation, Evaluation and Phenotyping with Censored Time-to-Event Data</h4>
-            <h1>W. Potosnak, C. Nagpal, A. Dubrawski</h1>
+            <h1>C. Nagpal, W. Potosnak, A. Dubrawski</h1>
             <p>auton-survival is an open-source repository of tools for survival regression, adjustment in the presence of domain shift, counterfactual estimation, phenotyping for risk stratification as well as estimation of treatment effects with censored time-to-event data. In Proceedings of the 7th Machine Learning for Healthcare Conference, PMLR.
             </p>
             <p>
