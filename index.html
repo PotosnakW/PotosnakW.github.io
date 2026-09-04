@@ -80,7 +80,7 @@
             <div class="col-lg-12 pt-3 pt-lg-0 content">
             <p>I am a doctoral student in the School of Computer Science at Carnegie Mellon University (CMU). My research focuses on advancing time series forecasting for real-world applications. More information on specific research areas and publications is included below.</p>
               
-            <p>I have worked on several projects aimed at improving outcome prediction through forecasting and survival analysis frameworks, while also contributing open-source code. In addition, I have collaborated with industry partners in healthcare and renewable wind energy to advance models for critical event prediction.</p>
+            <p>I have worked on several projects aimed at improving outcome prediction through forecasting and survival analysis frameworks, while also contributing open-source code. In addition, I have collaborated with industry partners in healthcare and renewable wind energy to advance models for critical event prediction. I have also collaborated with industries in ecommerce to advance models for demand and cold-start forecasting.</p>
         </div>
 <!--         <div class="col-lg-2">
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
@@ -97,13 +97,30 @@
         <div class="section-title">
           <h2>Research</h2>
         </div>
-          
+  
+	<div class="people-wrap">
+  	  <div class="people portfolio-wrap">
+    	    <img src="assets/img/projects/project_tsfm.png">
+	      <div class="portfolio-links">
+                <a href="assets/img/projects/project_tsfm.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foundation models are trained on vast datasets spanning diverse domains and frequencies."><i class="bx bx-plus"></i></a>
+                <a href="#projects" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+          <div class="content d-flex align-items-stretch">
+            <div class="info">
+              <div>
+                <h4>TSFMS/PFNs</h4>
+                <p>Large pre-trained Time Series Foundation Models (TSFMs) and Prior-data Fitted Networks (PFNs) have demonstrated impressive zero-shot performance across diverse domains. Current research is focused on identifying architectures that best support generalization while improving scalability and efficiency in training on vast datasets. Another important direction involves uncovering how these models internalize temporal patterns and represent domain-specific concepts.</p>
+              </div>
+            </div>
+          </div>
+	</div> 
           
 	<div class="people-wrap">
   	  <div class="people portfolio-wrap">
-    	    <img src="assets/img/projects/project_mechanistic.png">
+    	    <img src="assets/img/projects/project_multivariate.png">
 	      <div class="portfolio-links">
-                <a href="assets/img/projects/project_mechanistic.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Time series healthcare data, such as blood glucose values, can be challenging to forecast since there are many exogenous factors that contribute to changes in signal trajectories or patterns. Accurate forecasts of vital signs can improve people's quality of life. For example, accurate forecasts of blood glucose values would enable people with diabetes to better prempt hyper- and hypoglycemic events."><i class="bx bx-plus"></i></a>
+                <a href="assets/img/projects/project_multivariate.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Time series healthcare data, such as blood glucose values, can be challenging to forecast since there are many exogenous factors that contribute to changes in signal trajectories or patterns. Accurate forecasts of vital signs can improve people's quality of life. For example, accurate forecasts of blood glucose values would enable people with diabetes to better prempt hyper- and hypoglycemic events."><i class="bx bx-plus"></i></a>
                 <a href="#projects" title="More Details"><i class="bx bx-link"></i></a>
               </div>
           </div>
@@ -111,29 +128,11 @@
             <div class="info">
               <div>
                 <h4>Multivariate Forecasting</h4>
-                <p>Leveraging relationships across multiple time series, whether through cross-channel dependencies or exogenous covariates, has been shown to improve forecasting performance across diverse domains including weather, energy,supply chain, healthcare, and finance. Additionally, leveraging domain knowledge in the form of priors can be used to imbue models with structural constraints, ensuring that the forecasts remain interpretable and aligned with real-world dynamics.</p>
+                <p>Multivariate forecasting leverages dependencies across multiple time series simultaneously, enabling models to capture shared dynamics that univariate approaches miss. Wind speed recordings across geographically distributed Iowa stations illustrate this challenge: a large wind event appears correlated across all stations, yet with varying timing and magnitude, reflecting the complex spatial structure models must learn. Scaling such models efficiently with the number of channels remains an open problem with significant implications for real-world deployments.</p>
               </div>
             </div>
           </div>
 	</div>
-      
-	<div class="people-wrap">
-  	  <div class="people portfolio-wrap">
-    	    <img src="assets/img/projects/project_forecasting.png">
-	      <div class="portfolio-links">
-                <a href="assets/img/projects/project_forecasting.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Foundation models are trained on vast datasets spanning diverse domains and frequencies."><i class="bx bx-plus"></i></a>
-                <a href="#projects" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-          </div>
-          <div class="content d-flex align-items-stretch">
-            <div class="info">
-              <div>
-                <h4>Time Series Forecasting Foundation Models</h4>
-                <p>Large pre-trained time series foundation models (TSFMs) have demonstrated impressive zero-shot performance across diverse domains. Current research is focused on identifying architectures that best support generalization while improving scalability and efficiency in training on vast datasets. Another important direction involves uncovering how these models internalize temporal patterns and represent domain-specific concepts.</p>
-              </div>
-            </div>
-          </div>
-	</div> 
           
 	<div class="people-wrap">
   	  <div class="people portfolio-wrap">
@@ -148,6 +147,25 @@
               <div>
                 <h4>Zero-shot Forecasting Generalization</h4>
                 <p>Foundation models are trained on large, diverse datasets, raising a critical question for time series forecasting: do models generalize well because they learn underlying concepts of temporal dynamics, or do they simply memorize specific patterns seen during training? If those models rely on memorization, particularly in the form of time series pattern matching, it could lead to redundancy in the stored knowledge, parameter inefficiency, and possibly limit their ability to generalize well to out-of-distribution (OOD) data. A central challenge is to understand how forecasting models generalize, especially under OOD conditions, in order to design models with stronger generalization capabilities.</p>
+              </div>
+            </div>
+          </div>
+	</div> 
+          
+          
+	<div class="people-wrap">
+  	  <div class="people portfolio-wrap">
+    	    <img src="assets/img/projects/project_steering.png">
+	      <div class="portfolio-links">
+                <a href="assets/img/projects/project_steering.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Concept-steered is a technique where a time series pattern, such as negative trend, is translated into a concept vector that shifts model predictions at inference time, with no retraining required."><i class="bx bx-plus"></i></a>
+                <a href="#projects" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+          </div>
+          <div class="content d-flex align-items-stretch">
+            <div class="info">
+              <div>
+                <h4>Mechanistic Interpretability and Domain-Priors</h4>
+                <p>Time series foundation models are powerful predictors, but understanding why they work remains an open challenge. Mechanistic interpretability aims to reverse-engineer the internal representations these models learn, identifying which components encode meaningful temporal patterns, trends, or anomalies. Injecting domain priors into this process allows us to go further: rather than treating the model as a black box, we can align its internal structure with known concepts from a given field, such as public sentiment in finance or pharmacokinetics in healthcare. This enables practical capabilities like concept-steered forecasting, where a world event is translated into a concept vector that shifts model predictions at inference time, with no retraining required.</p>
               </div>
             </div>
           </div>
@@ -170,23 +188,21 @@
 
         <div class="people-wrap">
           <div class="people portfolio-wrap">
-                <img src="assets/img/portfolio/2026_mica.png">
+                <img src="assets/img/portfolio/2026_scaleinv.png">
               <div class="portfolio-links">
-                    <a href="assets/img/portfolio/2026_mica.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="MICA consists of local attention to capture temporal
-dependencies and global linear attention to capture cross-channel information, combined via a mixing gate. Attention outputs are shown as patch (token) × d matrices, where darker cells indicate stronger weighted values."><i class="bx bx-plus"></i></a>
+                    <a href="assets/img/portfolio/2026_scaleinv.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Median per-dataset MASE over 80,000 updates for the full TSFM experiment of Section 4.3, for all four pretrained architectures. The runs use the train-split corpus and variable-context window index throughout. The lines show the mean across 4 seeds, and shaded regions show 95% Student-t intervals. The scale-invariant loss converges faster in every case."><i class="bx bx-plus"></i></a>
                     <a href="https://arxiv.org/abs/2604.06473" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
               </div>
               <div class="content d-flex align-items-stretch">
                 <div class="info">
                   <div>
-                    <h4>MICA: Multivariate Infini Compressive Attention for Time Series Forecasting</h4>
-            <h1>W. Potosnak, N. Żukowska, M. Wiliński, D. Howarth, I. Stępka, M. Goswami, A. Dubrawski </h1>
-            <p>We propose Multivariate Infini Compressive Attention (MICA), an architectural design to extend channel-independent Transformers to channel-dependent forecasting. By adapting efficient attention techniques from the sequence dimension to the channel dimension, MICA adds a cross-channel attention mechanism to channel-independent backbones that scales linearly with channel count and context length.
+                    <h4>Scale-Invariant Training Losses for Time Series Foundation Models</h4>
+            <h1>I. Stępka, W. Potosnak, K. G. Olivares, A. Dubrawski </h1>
+            <p>Time series foundation models (TSFMs) are trained across diverse datasets spanning varying frequencies, domains, and scales, but a subtle flaw arises when methods like Reversible Instance Normalization (ReVIN) reverse the scaling transform before computing the loss, what we call a scale-contaminated loss, causing high-scale series to dominate training. Computing the loss directly on scaled targets instead yields a scale-invariant loss: for any scale-equivariant scaler and residual loss homogeneous of degree p (including MSE, MAE, and Quantile Loss), we prove that arbitrary rescaling of training series leaves every mini-batch gradient and the full optimization trajectory unchanged. This fix requires only a one-line code change compatible with existing scaling pipelines.
             </p>
             <p>
-                <a href="https://arxiv.org/abs/2604.06473" target="_blank">[Paper]&emsp;</a>
-                <a href="https://github.com/PotosnakW/neuralforecast/tree/MICA" target="_blank">[Code]&emsp;</a>
+                <a href="" target="_blank">[Paper]&emsp;</a>
             </p>
                   </div>
                 </div>
@@ -204,12 +220,40 @@ dependencies and global linear attention to capture cross-channel information, c
               <div class="content d-flex align-items-stretch">
                 <div class="info">
                   <div>
-                    <h4>Forking-Sequences</h4>
-            <h1>W. Potosnak, M. Wolff, B. Oreshkin, M. Cao, M. W. Mahoney, D. Efimov, K. G. Olivares</h1>
-            <p>Unlike standard statistical and neural forecasting methods that treat each FCD independently, the forking-sequences method jointly encodes and decodes the entire time series across all FCDs. We formalize the forking-sequences approach and advocate for its broader adoption, demonstrating three key benefits: (i) more stable and consistent gradient updates during training; (ii) reduced forecast variance through ensembling; and (iii) improved computational efficiency during inference.
+                    <h4>Forking-Sequences: Statistically and Computationally Efficient Multi-Horizon Forecasting with Reduced Volatility</h4>
+            <h1>W. Potosnak, M. Wolff, R. Ma, M. Cao, T. Konstantinova, D. Efimov, M. W., Mahoney, B. Oreshkin, K. G. Olivares</h1>
+            <p>Unlike standard statistical and neural forecasting methods that treat each FCD independently, the forking-sequences method jointly encodes and decodes the entire time series across all FCDs. We formalize the forking-sequences approach and advocate for its broader adoption, demonstrating three key benefits: (i) reduced forecast volatility through ensembling; (ii) gradient variance reduction, improving the statistical efficiency of the training procedure; and (iii) improved inference computational efficiency. In Transactions of Machine Learning Research (TMLR).
             </p>
             <p>
                 <a href="https://arxiv.org/abs/2510.04487" target="_blank">[Paper]&emsp;</a>
+                <a href="https://blog.ml.cmu.edu/2026/08/10/forking-sequences-part-i-statistically-and-computationally-efficient-multi-horizon-forecasting/" target="_blank">[Blog I]&emsp;</a>
+                <a href="https://blog.ml.cmu.edu/2026/08/10/forking-sequences-part-ii-multi-horizon-forecast-ensembling-with-reduced-volatility/" target="_blank">[Blog II]&emsp;</a>
+                <a href="https://github.com/PotosnakW/ForgeTS" target="_blank">[Unofficial Code]&emsp;</a>
+            </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+          
+        <div class="people-wrap">
+          <div class="people portfolio-wrap">
+                <img src="assets/img/portfolio/2026_mica.png">
+              <div class="portfolio-links">
+                    <a href="assets/img/portfolio/2026_mica.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="MICA consists of local attention to capture temporal
+dependencies and global linear attention to capture cross-channel information, combined via a mixing gate. Attention outputs are shown as patch (token) × d matrices, where darker cells indicate stronger weighted values."><i class="bx bx-plus"></i></a>
+                    <a href="https://arxiv.org/abs/2604.06473" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+              </div>
+              <div class="content d-flex align-items-stretch">
+                <div class="info">
+                  <div>
+                    <h4>MICA: Multivariate Infini Compressive Attention for Time Series Forecasting</h4>
+            <h1>W. Potosnak, N. Żukowska, M. Wiliński, D. Howarth, I. Stępka, M. Goswami, A. Dubrawski </h1>
+            <p>We propose Multivariate Infini Compressive Attention (MICA), an architectural design to extend channel-independent Transformers to channel-dependent forecasting. By adapting efficient attention techniques from the sequence dimension to the channel dimension, MICA adds a cross-channel attention mechanism to channel-independent backbones that scales linearly with channel count and context length.
+            </p>
+            <p>
+                <a href="https://arxiv.org/abs/2604.06473" target="_blank">[Paper]&emsp;</a>
+                <a href="https://github.com/PotosnakW/neuralforecast/tree/MICA" target="_blank">[Code]&emsp;</a>
             </p>
                   </div>
                 </div>
